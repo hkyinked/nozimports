@@ -1,23 +1,96 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<title>Daily Scrapers</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" > 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body,h1 {font-family: "lobster", "montserrat"}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('cartoon-car.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 
-<div class="home">
+footer {
+  font-family: 'Raleway', sans-serif;
+  position: center;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
 
-  <h1 class="page-heading">Posts</h1>
+link {
+  font-family: "raleway", "sans-serif";
+  padding: 10px 24px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+.button:hover {background-color: #3e8e41}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</style>
+</head>
+<body>
 
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div class="w3-container">
 </div>
+<br>
+<div class="w3-row">
+  <div class="w3-col s6 w3-clear w3-xxxlarge w3-text-pink w3-center">
+    <p>Daily</p>
+    <hr class="w3-border-pink" style="margin:auto;width:25%">
+  </div>
+  <div class="w3-col s6 w3-clear w3-xxxlarge w3-text-pink w3-center">
+    <p>Scrapers</p>
+    <hr class="w3-border-pink" style="margin:auto;width:25%">
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top w3-text-pink">COMING SOON</h1>
+    <hr class="w3-border-pink" style="margin:auto;width:96%">
+<br>
+    <div class="link">
+    <p class="w3-large w3-center w3-text-white"><button type="button" class="btn btn-info"><a href="#">Sign up</button></a></p>
+    <p class="w3-large w3-center w3-text-pink"><button type="button" class="btn btn-info"><a href="#">Login</button></a></p>
+        
+  </div>
+</div>
+  <footer>
+  <div class="w3-display-bottommiddle w3-text-pink w3-padding-xlarge">
+    Powered by pi <br> &copy; 2019 dailyscrapers.com
+  </div>
+</footer>
+</div>
+
+</body>
+</html>
+
