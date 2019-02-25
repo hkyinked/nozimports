@@ -1,0 +1,37 @@
+
+.img-circle {
+  border-radius: 50%;
+}
+.img-rounded {
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%; 
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.img-responsive {
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%; 
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+}
+.fakeimg {
+  height: auto;
+  width: 250px; 
+  
+}
+.fakeimg1 {
+  height: auto;
+  width: 400px;
+  background-image: class(circle)
+
+}
+body {
+    background-color: rgb(179, 182, 182)
+}
+
+body,h1 {font-family: "lobster", "montserrat";
+ }
+
+.jumbotron {
+  background-color: rgb(179, 182, 182)
+}

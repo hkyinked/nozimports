@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/image-style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" > 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -12,15 +13,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <style>
+  .img-circle {
+    border-radius: 50%;
+  }
+  .img-rounded {
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%; 
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+  .img-responsive {
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%; 
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+  }
   .fakeimg {
     height: auto;
-    width: 500px; 
-    background: #aaa;
+    width: 150px; 
+    
   }
   .fakeimg1 {
     height: auto;
-    width: auto;
+    width: 400px;
     background-image: class(circle)
+
   }
   body {
       background-color: rgb(179, 182, 182)
@@ -84,7 +101,7 @@
 <div class="container" style="margin-top:30px" >
   <div class="row">
     <div class="col-sm-4">
-      <div class="fakeimg1"><img class="img-responsive" src="images/skylinesunset.jpeg"  alt="skyline sunset" width="304" height="280"></div>
+      <div class="fakeimg1"><img class="img-circle" src="images/skylinesunset.jpeg"  alt="skyline sunset" width="270" height="235"></div>
       <h3>Some helpful FAQ Links</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
@@ -109,7 +126,7 @@
       <h3><center>Customer Testimonials</center></h3>
     </div>
     <div class="jumbotron" height="auto" width="auto">
-    <div class="fakeimg"><img src="images/testimonial-1.jpg" height="600" width="600"></div>
+    <div class="fakeimg"><img class="img-responsive" src="images/testimonial-1.jpg" height="600" width="600"></div>
       <p><center>Founder of NozImports~Thomas Nobles</center></p>
       <p>Thomas Nobles' dreams came to a reality as he stands next to his new 1990 blue r32 locally imported</p>
       <br>
@@ -121,7 +138,7 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>
   <div class="w3-display-bottommiddle w3-text-black w3-padding-xlarge">
-                  Powered by pi <br> &copy; 2019 <a href="index.html">nozimports.com></nozimports></a>
+                  Powered by pi <br> &copy; 2019 <a href="index.html">nozimports.com</nozimports></a>
   </div>
   </p>
 </div>
