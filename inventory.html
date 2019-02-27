@@ -45,15 +45,27 @@
   .jumbotron {
     background-color: rgb(179, 182, 182)
   }
+
+  #footerbox {
+      margin-top: 0%;
+      margin-bottom: 100%;
+  }
+
+  #cards {
+      margin-top: 1%;
+      margin-left: 5%;
+      margin-right: 8%;
+      margin-bottom: 10%;
+  }
   </style>
 </head>
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <div class="page-header">
-  <h1><big>Welcome to Noz Imports</h1>
+  <h1 class=display-1>Welcome to Noz Imports</h1>
   <p>Where we take the hassle out of importing your favorite JDM vehicle</p> 
- </div></big> 
+ </div> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -75,7 +87,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact us</a>
             </li> 
-            <div class="navbar-collapse collapse w-1000 order-4 dual-collapse2">
+            <div class="navbar-collapse collapse w-300 order-4 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <form action="/action_page.php">
@@ -93,30 +105,39 @@
           </ul>
         </div>
       </nav>
-<div class="container" font: sans-serif;>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3><a href="Vehicles/1995-skyline-1574.html">1995 Nissan Skyline</a></h3>
-            <p><img class="img-rounded" src="Vehicles/images/1995-skyline-1574.jpg" height="270" width="350"></p>
-            <p>1995 Nissan Skyline amazing vibrant red paint job, Manual transmission,lots of modifications, only 81,370 km, interior in mint condition</p>
-          </div>
-          <div class="col-sm-4">
-            <h3><a href="Vehicles/1993-rx7-2245.html">1993 Mazda RX7 FD edition</a></h3>
-            <p><img class="img-rounded" src="Vehicles/images/1993-rx7-2245.jpg" height="270" width="350"></p>
-            <p>1993 Mazda RX7 FD edition, only 48,652km!, Mint interior, brand new paint, lots of modifications</p>
-          </div>
-          <div class="col-sm-4">
-                <h3><a href="Vehicles/1998-gc8-1382.html">1998 Subaru Impreza GC8</a></h3>
-                <p><img class="img-rounded" src="Vehicles/images/1998-gc8-1382.jpg" height="270" width="350"></p>
-                <p>1993 Mazda RX7 FD edition, only 48,652km!, Mint interior, brand new paint, lots of modifications</p>
+      <br>
+      
+    <div class="container" id="cards">
+      <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="Vehicles/images/1995-skyline-1574.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><a href="Vehicles/1995-skyline-1574.html">1995 Nissan Skyline</h5></a>
+                <p class="card-text">1995 Nissan Skyline amazing vibrant red paint job, Manual transmission,lots of modifications, only 81,370 km, interior in mint condition</p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="Vehicles/images/1993-rx7-2245.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="Vehicles/1993-rx7-2245.html">1993 Mazda Rx7</h5></a>
+                    <p class="card-text">1993 Mazda Rx7 amazing vibrant paint job, Manual transmission,lots of modifications, only 62,146 km, interior in mint condition</p>
+                </div>
+            </div>
+            <div class="card">
+                    <img class="card-img-top" src="Vehicles/images/1998-gc8-1382.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="Vehicles/1998-gc8-1382.html">1998 Subaru Impreza GC8</h5></a>
+                      <p class="card-text">1998 Subaru Impreza GC8 amazing vibrant paint job, Manual transmission,lots of modifications, only 52,729 km, interior in mint condition</p>
+                    </div>
           </div>
         </div>
-</div>
+    </div>
+
+
 <footer>
-<div class="jumbotron text-center" style="margin-bottom:0">
+<div id="footerbox" class="jumbotron text-center" style="margin-bottom:0">
   <p>
-  <div class="w3-display-bottommiddle w3-text-black w3-padding-xlarge">
-                  Powered by pi <br> &copy; 2019 <a href="index.html">nozimports.com</nozimports></a>
+  <div class="footer">Powered by pi <br> &copy; 2019 <a href="index.html">nozimports.com</nozimports></a>
   </div>
   </p>
 </div>
