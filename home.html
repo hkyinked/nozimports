@@ -24,8 +24,8 @@
   }
  
   .fakeimg {
-    height: auto;
-    width: 150px; 
+    height: 85%;
+    width: 85%;
     
   }
   .fakeimg1 {
@@ -45,14 +45,24 @@
     background-color: rgb(179, 182, 182)
   }
 
-  #test {  border-bottom-right-radius: 12%;
+  #test {  
+    border-bottom-right-radius: 12%;
     border-bottom-left-radius: 12%; 
     border-top-left-radius: 12%;
     border-top-right-radius: 12%;
+    width: 75%;
+    max-width:600px;
+    max-height: 600px;
+    
   }
 
   #collapsibleNavbar{
     background-color: rgba(34, 36, 36, 0)
+  }
+
+  #important {
+    border: 8px;
+    border-color: black;
   }
   </style>
 </head>
@@ -125,13 +135,13 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <div class="jumbotron" height="auto" width="400">
+      <div class="jumbotron" id="important" height="auto" width="400">
       <h1><center>Importing into the USA</center></h1>
       <p>All vehicles that get imported into the USA <em>MUST</em> be at the very least 25 years old to the month of manufacture in order for them to be legally imported and driven without the worry of having them impounded, seized or crushed.</p>
       <h3><center>Customer Testimonials</center></h3>
     </div>
     <div class="jumbotron" height="auto" width="auto">
-    <div class="fakeimg"><img id="test" src="images/testimonial-1.jpg" height="600" width="600"></div>
+    <div class="fakeimg"><img id="test" src="images/testimonial-1.jpg"></div>
       <p><center>Founder of NozImports~Thomas Nobles</center></p>
       <p>Thomas Nobles' dreams came to a reality as he stands next to his new 1990 blue r32 locally imported</p>
       <br>
